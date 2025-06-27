@@ -15,9 +15,11 @@ createRoot(document.getElementById('root'))
 )
 
 function CustomFxn(){
+  const username = "variable injected here"  //IMP - evaluated expression
+
   return(
     <div>
-      <p>function rendered directly inside main</p>
+      <p>function rendered directly inside main + {username}</p>
     </div>
   )
 }
