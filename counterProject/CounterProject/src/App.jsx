@@ -11,7 +11,10 @@ function App() {
   const addValue = () => {
     // console.log("value added" )
     counter += 1;
-    setCounter(counter);
+    //setCounter returns a callback fxn, thus to make upadate multiple times in single useState, try to fetch then modify the previous state
+    setCounter((prevCounter) => prevCounter + 1);   //prevCounter = last updated state of the counter fetched from setCounter itself
+    setCounter((prevCounter) => prevCounter + 1);  
+    setCounter((prevCounter) => prevCounter + 1);   //+3 in one single click
   }
 
   const decreaseValue = () => {
