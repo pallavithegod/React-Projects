@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link, Navlink} from 'react-router' 
+import {Link} from 'react-router' 
 
 export default function Home() {
     return (
@@ -20,7 +20,7 @@ export default function Home() {
                                 fill="white"
                                 width="24"
                                 height="24"
-                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg"
                                 fillRule="evenodd"
                                 clipRule="evenodd"
                             >

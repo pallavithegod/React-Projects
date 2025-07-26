@@ -1,6 +1,6 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { BrowserRouter, createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router";
+import React ,{ StrictMode } from 'react'
+import ReactDOM,{ createRoot } from 'react-dom/client'
+import { BrowserRouter, createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from "react-router";
 import './index.css'
 
 import About from "./Components/About/About";
@@ -19,7 +19,7 @@ const router = createBrowserRouter(
          <Route path = "/contact" element = {<Contact />} />
          <Route path = "/github" element = {<Github />} />
          <Route path = "/user" element = {<User />} />
-         <Route path = "/home" element = {<Home />} />
+         <Route path = "/" element = {<Home />} />
       </Route>
    )
 )
