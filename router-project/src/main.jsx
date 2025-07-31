@@ -5,7 +5,7 @@ import './index.css'
 
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
-import Github from "./Components/Github/Github";
+import Github, {githubInfoLoader} from "./Components/Github/Github";
 import Home from "./Components/Home/Home";
 import User from "./Components/User/User";
 
@@ -17,7 +17,10 @@ const router = createBrowserRouter(
       <Route path = "/" element = {<Layout />}>
          <Route path = "/about" element = {<About />} />
          <Route path = "/contact" element = {<Contact />} />
-         <Route path = "/github" element = {<Github />} />
+         <Route 
+         loader = {githubInfoLoader}
+         path = "/github" 
+         element = {<Github />} />
          <Route path = "/user/:userid" element = {<User />} />
          <Route path = "/" element = {<Home />} />
       </Route>
