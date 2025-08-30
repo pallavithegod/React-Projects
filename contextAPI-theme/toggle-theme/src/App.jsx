@@ -6,9 +6,7 @@ function App() {
 
   return (
    <>
-
    <h1>Toggle Theme</h1>
-   
    </>
   )
 }
