@@ -5,9 +5,9 @@ function App() {
   
 
   return (
-   <>
-   <h1>Toggle Theme</h1>
-   </>
+   <UserContextProvider>
+      <h1>Toggle Theme</h1>
+   </UserContextProvider>
   )
 }
 
