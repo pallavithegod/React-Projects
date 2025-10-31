@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import React,{ useEffect, useState } from 'react'
 import { ThemeProvider } from './context/theme'
 import ThemeBtn from './components/ThemeBtn';
 import Card from './components/Card';
@@ -26,14 +26,13 @@ function App() {
 
 
   return (
-    <ThemeProvider val={{themeMode, darkTheme, lightTheme}}>
-      {/* <h1 className='p-4 bg-blue-800 text-3xl'>Switching Themes</h1> */}
+    <ThemeProvider value={{themeMode, darkTheme, lightTheme}}>
+     
       <div className="flex flex-wrap min-h-screen items-center">
         <div className="w-full">
 
           <div className="w-full max-w-sm mx-auto flex justify-end mb-4">
             <ThemeBtn/>
-            {/* <button className="bg-blue-500 text-white px-4 py-2 rounded mr-2">Light Theme</button> */}
           </div>
           
           <div className="w-full max-w-sm mx-auto">
